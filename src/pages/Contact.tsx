@@ -172,12 +172,12 @@ const Contact = () => {
                   {
                     icon: MapPin,
                     title: "Temple Address",
-                    content: ["Temple Road, Sacred Hills", "Divine City, DC 517501", "United States"],
+                    content: ["Gachibowli - Miyapur Rd, Vinayak Nagar", "Indira Nagar, Gachibowli", "Hyderabad, Telangana 500032"],
                   },
                   {
                     icon: Clock,
                     title: "Darshan Timings",
-                    content: ["Morning: 5:00 AM - 12:00 PM", "Evening: 4:00 PM - 9:00 PM", "Closed during Abhishekam hours"],
+                    content: ["Sun-Fri Morning: 6:30 AM - 11:00 AM", "Sun-Fri Evening: 5:30 PM - 8:00 PM", "Saturday Morning: 6:30 AM - 12:00 PM,Evening: 5:30 PM - 9:00 PM"],
                   },
                   {
                     icon: Phone,
@@ -214,14 +214,14 @@ const Contact = () => {
               {/* Map Placeholder */}
               <div className="bg-card rounded-xl overflow-hidden shadow-card border border-gold/10 h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.543!2d79.347!3d13.683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQxJzAwLjAiTiA3OcKwMjAnNDkuMiJF!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.564!2d78.3499!3d17.3606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d6f8e0c2ad%3A0x9c1234567890abcd!2sSri%20Padmavathi%20Venkateshwara%20Swami%20Temple%2C%20Gachibowli%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1735414800000"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen
+                  allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Temple Location"
+                  title="Sri Padmavathi Venkateshwara Swami Temple Location"
                 />
               </div>
             </motion.div>

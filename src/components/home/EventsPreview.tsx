@@ -607,7 +607,7 @@ Ithi Sri Venkateswara Govinda Namavali Sampoornam ||`;
 
         {/* Events Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {upcomingEvents.map((event, index) => (
+          {upcomingEvents.slice(0, 4).map((event, index) => (
             <motion.div
               key={event.title}
               initial={{ opacity: 0, y: 30 }}

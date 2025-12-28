@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import templeImage from "@/assets/temple-architecture.jpg";
 
 export const AboutPreview = () => {
   return (
@@ -23,7 +22,7 @@ export const AboutPreview = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
-                src={templeImage}
+                src="/images/temple.png"
                 alt="Ancient temple gopuram architecture"
                 className="w-full h-[500px] object-cover"
               />
