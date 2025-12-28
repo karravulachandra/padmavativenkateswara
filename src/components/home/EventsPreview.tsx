@@ -12,10 +12,6 @@ import {
 } from "@/components/ui/dialog";
 
 const upcomingEvents = [
-  { date: "1 Dec", month: "2025", title: "Mokshada / Vaikuntha Ekadashi", description: "Ekadashi observance", type: "Ekadashi" },
-  { date: "15 Dec", month: "2025", title: "Saphala Ekadashi", description: "Ekadashi observance", type: "Ekadashi" },
-  { date: "30 Dec", month: "2025", title: "Pausha Putrada Ekadashi", description: "Ekadashi observance", type: "Ekadashi" },
-
   { date: "14 Jan", month: "2026", title: "Shattila Ekadashi", description: "Ekadashi observance", type: "Ekadashi" },
   { date: "29 Jan", month: "2026", title: "Jaya Ekadashi", description: "Ekadashi observance", type: "Ekadashi" },
 

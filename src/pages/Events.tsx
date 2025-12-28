@@ -7,49 +7,44 @@ import { Button } from "@/components/ui/button";
 import lotusMandala from "@/assets/lotus-mandala.png";
 
 const allEvents = [
-  { id: 1, date: "Dec 1, 2025", title: "Mokshada / Vaikuntha Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 2, date: "Dec 15, 2025", title: "Saphala Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 3, date: "Dec 30, 2025", title: "Pausha Putrada Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 1, date: "Jan 14, 2026", title: "Shattila Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 2, date: "Jan 29, 2026", title: "Jaya Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 4, date: "Jan 14, 2026", title: "Shattila Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 5, date: "Jan 29, 2026", title: "Jaya Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 3, date: "Feb 13, 2026", title: "Vijaya Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 4, date: "Feb 27, 2026", title: "Amalaki Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 6, date: "Feb 13, 2026", title: "Vijaya Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 7, date: "Feb 27, 2026", title: "Amalaki Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 5, date: "Mar 15, 2026", title: "Papamochani Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 6, date: "Mar 29, 2026", title: "Kamada Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 8, date: "Mar 15, 2026", title: "Papamochani Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 9, date: "Mar 29, 2026", title: "Kamada Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 7, date: "Apr 13, 2026", title: "Varuthini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 8, date: "Apr 27, 2026", title: "Mohini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 10, date: "Apr 13, 2026", title: "Varuthini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 11, date: "Apr 27, 2026", title: "Mohini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 9, date: "May 12, 2026", title: "Apara Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 10, date: "May 27, 2026", title: "Padmini Ekadashi (Adhik)", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 12, date: "May 12, 2026", title: "Apara Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 13, date: "May 27, 2026", title: "Padmini Ekadashi (Adhik)", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 11, date: "Jun 11, 2026", title: "Parama Ekadashi (Adhik)", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 12, date: "Jun 25, 2026", title: "Nirjala Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 14, date: "Jun 11, 2026", title: "Parama Ekadashi (Adhik)", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 15, date: "Jun 25, 2026", title: "Nirjala Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 13, date: "Jul 10, 2026", title: "Yogini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 14, date: "Jul 25, 2026", title: "Devshayani (Ashadhi) Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 16, date: "Jul 10, 2026", title: "Yogini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 17, date: "Jul 25, 2026", title: "Devshayani (Ashadhi) Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 15, date: "Aug 9, 2026", title: "Kamika Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 16, date: "Aug 24, 2026", title: "Putrada Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 18, date: "Aug 9, 2026", title: "Kamika Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 19, date: "Aug 24, 2026", title: "Putrada Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 17, date: "Sep 8, 2026", title: "Aja Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 18, date: "Sep 23, 2026", title: "Parsva / Vamana Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 20, date: "Sep 8, 2026", title: "Aja Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 21, date: "Sep 23, 2026", title: "Parsva / Vamana Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 19, date: "Oct 8, 2026", title: "Indira Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 20, date: "Oct 23, 2026", title: "Papankusha Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 22, date: "Oct 8, 2026", title: "Indira Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 23, date: "Oct 23, 2026", title: "Papankusha Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 21, date: "Nov 6, 2026", title: "Rama Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 22, date: "Nov 20, 2026", title: "Devutthana / Prabodhini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 
-  { id: 24, date: "Nov 6, 2026", title: "Rama Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 25, date: "Nov 20, 2026", title: "Devutthana / Prabodhini Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-
-  { id: 26, date: "Dec 6, 2026", title: "Utpanna Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
-  { id: 27, date: "Dec 20, 2026", title: "Mokshada", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 23, date: "Dec 6, 2026", title: "Utpanna Ekadashi", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
+  { id: 24, date: "Dec 20, 2026", title: "Mokshada", description: "Ekadashi observance", time: "All day", type: "Ekadashi", location: "Main Temple" },
 ];
 
 const ekadashiDates = [
-  { month: "December 2025", dates: ["Dec 1 – Mokshada / Vaikuntha Ekadashi", "Dec 15 – Saphala Ekadashi", "Dec 30 – Pausha Putrada Ekadashi"] },
   { month: "January 2026", dates: ["Jan 14 – Shattila Ekadashi", "Jan 29 – Jaya Ekadashi"] },
   { month: "February 2026", dates: ["Feb 13 – Vijaya Ekadashi", "Feb 27 – Amalaki Ekadashi"] },
   { month: "March 2026", dates: ["Mar 15 – Papamochani Ekadashi", "Mar 29 – Kamada Ekadashi"] },
