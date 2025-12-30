@@ -28,7 +28,7 @@ const About = () => {
               About Our Temple
             </h1>
             <p className="text-xl text-primary-foreground/80">
-              Discover the divine history and spiritual significance of Sri Venkateswara Swami Temple
+              Discover the divine history and spiritual significance of Sri Padmavati Venkateswara Swami Temple
             </p>
           </motion.div>
         </div>
@@ -46,7 +46,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <img
-                src={templeImage}
+                src="public/images/temple.png"
                 alt="Temple Architecture"
                 className="rounded-2xl shadow-elevated"
               />

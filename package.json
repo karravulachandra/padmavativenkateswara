@@ -1,14 +1,21 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "sri-padmavati-venkateswara-temple",
+  "description": "Official website for Sri Padmavati Venkateswara Swami Temple - A spiritual sanctuary dedicated to Lord Venkateswara",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Sri Venkateswara Temple",
+  "license": "proprietary",
+  "keywords": ["temple", "venkateswara", "spiritual", "worship", "darshan"],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "vite preview",
+    "type-check:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
     "@fontsource/cinzel": "^5.2.8",

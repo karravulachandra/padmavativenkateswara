@@ -7,6 +7,9 @@ import { Input } from "@/components/ui/input";
 export const Footer = () => {
   const [visits, setVisits] = useState<number>(0);
 
+  // Resolve public assets via Vite import.meta URL to avoid runtime 404s
+  const logoSrc = new URL("/images/logo.png", import.meta.url).href;
+
   useEffect(() => {
     try {
       const key = "dg_visit_count";
@@ -35,9 +38,12 @@ export const Footer = () => {
           {/* Temple Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center">
-                <span className="font-display text-maroon-dark text-lg font-bold">ॐ</span>
-              </div>
+              <img
+                src={logoSrc}
+                alt="Sri Venkateswara Swami Temple Logo"
+                className="h-20 w-20"
+                loading="eager"
+              />
               <div>
                 <h3 className="font-display text-lg font-semibold text-gold">
                   Sri Venkateswara
@@ -68,10 +74,17 @@ export const Footer = () => {
           <div>
             <h4 className="font-display text-lg text-gold mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About Us", "Events & Festivals", "Sevas & Poojas", "Gallery", "Contact"].map((link) => (
-                <li key={link}>
-                  <Link to="#" className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">
-                    {link}
+              {[
+                { label: "Home", to: "/" },
+                { label: "About Us", to: "/about" },
+                { label: "Events & Festivals", to: "/events" },
+                { label: "Sevas & Poojas", to: "/#sevas" },
+                { label: "Gallery", to: "/gallery" },
+                { label: "Contact", to: "/contact" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link to={item.to} className="text-primary-foreground/70 hover:text-gold transition-colors text-sm">
+                    {item.label}
                   </Link>
                 </li>
               ))}

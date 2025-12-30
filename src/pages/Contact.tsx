@@ -211,23 +211,55 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-card rounded-xl overflow-hidden shadow-card border border-gold/10 h-64">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.564!2d78.3499!3d17.3606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d6f8e0c2ad%3A0x9c1234567890abcd!2sSri%20Padmavathi%20Venkateshwara%20Swami%20Temple%2C%20Gachibowli%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1735414800000"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={true}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Sri Padmavathi Venkateshwara Swami Temple Location"
-                />
+              {/* Map + Directions */}
+              <div className="bg-card rounded-xl overflow-hidden shadow-card border border-gold/10">
+                <div className="grid lg:grid-cols-2">
+                  <div className="h-56 lg:h-64 w-full">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.564!2d78.3499!3d17.3606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93d6f8e0c2ad%3A0x9c1234567890abcd!2sSri%20Padmavathi%20Venkateshwara%20Swami%20Temple%2C%20Gachibowli%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1735414800000"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen={true}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Sri Padmavathi Venkateshwara Swami Temple Location"
+                      className="w-full h-full"
+                    />
+                  </div>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h4 className="font-display text-sm font-semibold text-maroon mb-2">Visit Us</h4>
+                      <address className="not-italic text-sm text-muted-foreground">
+                        Sri Padmavathi Venkateshwara Swami Temple<br />
+                        Gachibowli - Miyapur Road, Vinayak Nagar<br />
+                        Indira Nagar, Gachibowli, Hyderabad<br />
+                        Telangana 500032, India
+                      </address>
+                    </div>
+                    <div className="mt-4">
+                      <a
+                        href="https://maps.app.goo.gl/VLFkJkMBmr757u9Q6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-maroon text-white px-4 py-2 rounded-md hover:bg-maroon/90 transition"
+                        aria-label="Get directions to Sri Padmavathi Venkateshwara Swami Temple"
+                      >
+                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                          <path d="M12 2v20M2 12h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        Get Directions
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
+
+      
 
       {/* Dress Code Notice */}
       <section className="py-12 bg-maroon/5">

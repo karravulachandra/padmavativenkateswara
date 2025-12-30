@@ -14,13 +14,15 @@ export const HeroSection = () => {
   const randomQuote = dailyQuotes[Math.floor(Math.random() * dailyQuotes.length)];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 lg:pt-28">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={heroImage}
           alt="Lord Venkateswara in divine glory"
           className="w-full h-full object-cover"
+          decoding="async"
+          loading="eager"
         />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 bg-maroon-dark/30" />
@@ -63,7 +65,7 @@ export const HeroSection = () => {
           className="max-w-4xl mx-auto"
         >
           {/* Temple Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
@@ -73,7 +75,7 @@ export const HeroSection = () => {
             <span className="text-gold text-sm font-medium tracking-wide">
               Daily Darshan Available
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Main Title */}
           <motion.h1
@@ -82,7 +84,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-tight"
           >
-            Sri Venkateswara
+            Sri Padmavati Venkateswara
             <span className="block text-gold">Swami Temple</span>
           </motion.h1>
 

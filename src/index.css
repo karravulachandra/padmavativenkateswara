@@ -172,6 +172,75 @@
     box-shadow: var(--shadow-elevated);
   }
 
+  /* Logo accent styles (non-destructive) */
+  .logo-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.02));
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.03);
+    transform-style: preserve-3d;
+  }
+
+  .logo-emboss {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));
+    padding: 4px;
+    border-radius: 10px;
+    transition: transform 260ms cubic-bezier(.2,.8,.2,1), box-shadow 260ms ease;
+    will-change: transform;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+
+  /* Footer variant slightly subtler */
+  .logo-badge-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  }
+
+  .logo-emboss-footer {
+    padding: 3px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.01);
+  }
+
+  /* Subtle float + tilt motion for header only (non-distracting) */
+  @keyframes logoFloat {
+    0% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+    50% { transform: translateY(-4px) rotateX(1deg) rotateY(-1deg); }
+    100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+  }
+
+  .animate-logo-float {
+    animation: logoFloat 6s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  /* Hover micro-interaction */
+  .logo-emboss:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  /* Respect user preference for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-logo-float,
+    .logo-emboss {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
   .text-gold {
     color: hsl(var(--gold));
   }

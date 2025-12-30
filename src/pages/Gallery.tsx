@@ -3,17 +3,17 @@ import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 // Images served from the `public` folder (use leading slash paths)
 const galleryImages = [
-  { src: "/images/temple.png", title: "Temple Architecture", category: "temple architecture" },
-  { src: "/images/VenkateswaraDeity.png", title: "Lord Venkateswara", category: "deity" },
-  { src: "/images/hanuman.png", title: "Lord Hanuman", category: "deity" },
-  { src: "/images/deity1.png", title: "Divine Deity 1", category: "deity" },
-  { src: "/images/deity2.png", title: "Divine Deity 2", category: "deity" },
-  { src: "/images/deity3.png", title: "Divine Deity 3", category: "deity" },
-  { src: "/images/andalammavaru.png", title: "Andal Ammavaru", category: "deity" },
-  { src: "/images/padmavatiammavaru.png", title: "Padmavati Ammavaru", category: "deity" },
-  { src: "/images/intemple.png", title: "Temple Interior", category: "temple" },
-  { src: "/images/specialevent.png", title: "Special Event", category: "events" },
-  { src: "/images/specialevent2.png", title: "Special Event 2", category: "events" },
+  { src: "/images/temple.png", title: "", category: "" },
+  { src: "/images/VenkateswaraDeity.png", title: "", category: "" },
+  { src: "/images/hanuman.png", title: "", category: "" },
+  { src: "/images/deity1.png", title: "", category: "" },
+  { src: "/images/deity2.png", title: "", category: "" },
+  { src: "/images/deity3.png", title: "", category: "" },
+  { src: "/images/andalammavaru.png", title: "", category: "" },
+  { src: "/images/padmavatiammavaru.png", title: "", category: "" },
+  { src: "/images/intemple.png", title: "", category: "" },
+  { src: "/images/specialevent.png", title: "", category: "" },
+  { src: "/images/specialevent2.png", title: "", category: "" },
 ];
 
 const Gallery = () => {
